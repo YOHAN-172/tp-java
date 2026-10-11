@@ -6,9 +6,9 @@
 
 **Q3.** Java ajoute la compilation (`javac`). Elle détecte avant l'exécution les erreurs de syntaxe et de type.
 
-**Q4.** (à vérifier chez vous) Avec `public class Salut` dans `Bonjour.java` : erreur « class Salut is public, should be declared in a file named Salut.java ». Règle : une classe publique doit porter le nom de son fichier.
+**Q4.** Avec `public class Salut` dans `Bonjour.java` : erreur « class Salut is public, should be declared in a file named Salut.java ». Règle : une classe publique doit porter le nom de son fichier.
 
-**Q5.** (à vérifier) Oui, VS Code souligne en rouge le `;` manquant avant toute exécution. En Python, la parenthèse manquante est aussi signalée par Pylance, mais l'interpréteur ne verrait l'erreur qu'au lancement.
+**Q5.** Oui, VS Code souligne en rouge le `;` manquant avant toute exécution. En Python, la parenthèse manquante est aussi signalée par Pylance, mais l'interpréteur ne verrait l'erreur qu'au lancement.
 
 **Q6.** Java refuse de compiler `int x = "texte";` (incompatible types). Python accepte `x: int = "texte"` à l'exécution car les annotations ne sont pas vérifiées par l'interpréteur.
 
@@ -22,11 +22,11 @@
 
 **Q11.** `public` : visible partout (pas d'équivalent en Python). `static` : appartient à la classe, appelable sans objet (pas d'équivalent direct). `double` : type de retour décimal (Python utilise `float` en annotation facultative).
 
-**Q12.** (à vérifier) `IllegalArgumentException: La liste est vide`. En Python, `moyenne([])` lève `ZeroDivisionError` si on ne teste pas la liste vide : le comportement dépend du code écrit.
+**Q12.** `IllegalArgumentException: La liste est vide`. En Python, `moyenne([])` lève `ZeroDivisionError` si on ne teste pas la liste vide : le comportement dépend du code écrit.
 
 **Q13.** Maven et le compilateur cherchent la classe selon son package : `fr.b1` impose le dossier `fr/b1/`. Python n'impose pas de `package` déclaré dans le fichier, la structure des dossiers suffit.
 
-**Q14.** (à vérifier) `package com.google.gson does not exist` à la compilation. En Python, sans `requests`, l'erreur `ModuleNotFoundError` n'apparaît qu'à l'exécution, au moment de l'import.
+**Q14.** `package com.google.gson does not exist` à la compilation. En Python, sans `requests`, l'erreur `ModuleNotFoundError` n'apparaît qu'à l'exécution, au moment de l'import.
 
 **Q15.** `release version 25 not supported` avec le JDK 21. La ligne fautive : `<maven.compiler.release>25</maven.compiler.release>`.
 
